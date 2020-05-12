@@ -28,11 +28,21 @@ devServer: {
    module: {
     rules: [
     {
-    test: /\.css$/,
-    use: [MiniCssExtractPlugin.loader, 'css-loader'],
-    }
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+    },
+    {
+        test: /\.(png|svg|jpg|gif|webp)$/,
+        use: [
+            'file-loader',
+        ],
+    },
+    {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+            'file-loader',
+        ],
+    },
     ],
    }, 
-   
-
 };

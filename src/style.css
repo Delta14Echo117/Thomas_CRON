@@ -1,3 +1,21 @@
-h1{
-    color: red;
+@font-face {
+    font-family: 'Evolve';
+    src:  url('./Made_Evolve_Sans_Regular.otf') format('otf');
+    font-weight: 400;
+    }
+
+@font-face {
+    font-family: 'Evolve';
+    src:  url('./Made_Evolve_Sans_Thin.otf') format('otf');
+    font-weight: 100;
+    }
+
+body{
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Evolve';
+    font-weight: 100;
 }
+
