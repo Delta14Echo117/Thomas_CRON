@@ -38,7 +38,7 @@ h2{
 .form_bloc {
     max-width: 450px;
     width: 450px;
-    margin: 0 auto;
+    margin: 50px auto;
     align-self: center;
 }
 
@@ -85,7 +85,7 @@ input[type="submit"] {
     color: #c8380c;
 }
 
-input#email, input#password {
+input#email, input#password, input, textarea {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid white;
@@ -103,4 +103,47 @@ input#email, input#password {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 10px 0 0 0;
+}
+
+textarea {
+    scrollbar-width: thin;
+  }
+textarea::-webkit-scrollbar {
+    width: 6px;
+  }
+textarea::-webkit-scrollbar-track {
+    background: transparent;
+  }
+textarea::-webkit-scrollbar-thumb {
+    background-color: #ffffff78;
+    border-radius: 20px;
+  }
+
+.erreur a {
+    color: white;
+}
+
+.erreur p {
+    margin: 0;
+}
+.erreur {
+    font-size: 14px;
+    background-color: #ff00004d;
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+.unsecure {
+    color: #ff0000;
+}
+
+.correct {
+    color: #25f72e;
+}
+.form > form > p.unsecure, .form > form > p.correct {
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 14px;
+    margin: -20px 0 40px;
 }

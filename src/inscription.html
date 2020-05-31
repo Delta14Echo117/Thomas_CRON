@@ -8,25 +8,33 @@
     <div>
         <img src="" alt="">
     </div>
-    <div>
-        <div>
-            <a href="./index.html"><h2>Connexion</h2></a>
+    <div class="form_bloc">
+        <div class="choix">
+            <div class="choix_inactive">
+                <a href="./index.html"><h2>Connexion</h2></a>
+            </div>
+            <div class="choix_active">
+                <a href="./inscription.html"><h2>Inscription</h2></a>
+            </div>
         </div>
-        <div>
-            <a href="./inscription.html"><h2>Inscription</h2></a>
-        </div>
-        <div>
+        <div class="form">
+            <div class="erreur">
+                <p>Certains champs obligatoire n'ont pas été remplis correctement.</p>
+            </div>
             <form action="">
                 <p>Nom & Prénom*</p>
-                <input type="text" name="">
+                <input type="text" name="nom" placeholder="Votre nom et prénom" required>
                 <p>Adresse Email*</p>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" placeholder="votre.adresse@email.com" required>
                 <p>Date de Naissance*</p>
-                <input type="date" name="date" id="date">
+                <input type="date" name="date" id="date" placeholder="01/01/2000" required>
                 <p>Créer un Mot de Passe*</p>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password" placeholder="••••••••••••" required>
+                <p class="unsecure">Votre mot de passe n'est pas sécurisé, utilisez au moins, une majuscule, une minuscule, un chiffre et un symbole.</p>
+                <p class="correct">Votre mot de passe est sécurisé</p>
                 <p>Confirmer le Mot de Passe*</p>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password" placeholder="••••••••••••" required>
+                <p class="correct mdp">Les mots de passe correspondent</p>
                 <p>Votre Description</p>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
                 <input type="submit" value="S'inscrire">
