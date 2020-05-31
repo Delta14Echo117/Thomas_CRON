@@ -1,9 +1,10 @@
 @import url("https://use.typekit.net/gfm8mmg.css");
 
-body{
-    background-image: url("./img/background.jpg");
+body {
+    background-image: url(img/background.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     min-height: 100vh;
     font-family: europa, sans-serif;
     font-weight: 400;
@@ -11,6 +12,11 @@ body{
     color: white;
     margin: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 h2{
@@ -63,6 +69,12 @@ h2{
     text-decoration-color: #C8380C;
 }
 
+input[type="submit"]:hover {
+    cursor: pointer;
+    background: #c8380c1c;
+    transition-duration: 0.3s;
+}
+
 input[type="submit"] {
     background: #c8380c;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.24);
@@ -75,6 +87,7 @@ input[type="submit"] {
     letter-spacing: 5px;
     display: block;
     margin: 25px auto;
+    transition-duration: 0.3s;
 }
 
 .form > p {
@@ -120,6 +133,10 @@ textarea::-webkit-scrollbar-thumb {
     border-radius: 20px;
   }
 
+.form > div:nth-child(1){
+    display: none;
+}
+
 .erreur a {
     color: white;
 }
@@ -133,10 +150,16 @@ textarea::-webkit-scrollbar-thumb {
     padding: 10px;
     border-radius: 2px;
     margin-bottom: 30px;
+    display: block !important;
 }
 
 .unsecure {
     color: #ff0000;
+    display: none;
+}
+
+.unsecure_on{
+    display: block !important;
 }
 
 .correct {
@@ -147,4 +170,17 @@ textarea::-webkit-scrollbar-thumb {
     letter-spacing: normal;
     font-size: 14px;
     margin: -20px 0 40px;
+}
+
+.logo {
+    max-width: 450px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #19191961;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.84));
+    backdrop-filter: blur(30px);
+}
+
+.logo a img {
+    width: 100%;
 }

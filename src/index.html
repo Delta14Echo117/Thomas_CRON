@@ -5,8 +5,8 @@
  <title>Guardians - Connexion</title>
  </head>
  <body>
-    <div>
-        <img src="" alt="">
+    <div class="logo">
+        <a href="./index.html"><img src="./img/Guardians.png" alt="Logo de Guardians Entertainment"></a>
     </div>
     <div  class="form_bloc">
         <div class="choix">
@@ -18,19 +18,20 @@
             </div>
         </div>
         <div class="form">
-            <div class="erreur">
+            <div>
                 <p>Il n'y a une erreur dans votre adresse email ou votre mot de passe. Mot de passe oublié ?<a href=""> Récupérer votre mot de passe</a></p>
             </div>
-                <form action="">
+                <form id="connexion" name="connexion" action="POST">
                     <p>Adresse Email</p>
                     <input placeholder="votre.adresse@email.com" type="email" name="email" id="email" required>
                     <p>Mot de Passe</p>
                     <input type="password" name="password" id="password" placeholder="••••••••••••" required>
                     <input type="submit" value="Se Connecter">
                 </form>
-                <p>Pas encore inscrit ? <a href="">S'inscrire</a></p>
-                <p>Mot de passe oublié ? <a href="">Cliquez ici</a></p>
+                <p>Pas encore inscrit ? <a href="./inscription.html">S'inscrire</a></p>
+                <p>Mot de passe oublié ? <a href="./forget.html">Cliquez ici</a></p>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  </body>
 </html>

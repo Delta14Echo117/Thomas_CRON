@@ -19,6 +19,11 @@ module.exports = {
         inject: true,
         filename: 'inscription.html'
         }),
+        new HtmlWebpackPlugin({
+            template: './src/forget.html',
+            inject: true,
+            filename: 'forget.html'
+            }),
     new MiniCssExtractPlugin()
    ],
 devServer: {
@@ -32,10 +37,12 @@ devServer: {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
     },
     {
-        test: /\.(png|svg|jpg|gif|webp)$/,
-        use: [
-            'file-loader',
-        ],
+        test: /.jpe?g$|.gif$|.png$|.PNG$|.svg$|.woff(2)?$|.ttf$|.eot$/,
+        loader: 'file-loader',
+        options: {
+            name: '[name].[ext]',
+            outputPath: 'img/'
+        }
     },
     {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
