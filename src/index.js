@@ -35,8 +35,11 @@ $(document).ready(function() {
 
     $("#inscription").submit(function(e){
         e.preventDefault();
-        alert('Inscription réussie !');
-
+        if($("#password_inscri").val() == $("#password_verif").val()){
+            alert('Inscription réussie !');
+        }else{
+            $(".incorrect").addClass("erreur");
+        }
     });
 
     $('#password_verif').keyup(function(e){

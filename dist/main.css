@@ -158,6 +158,10 @@ textarea::-webkit-scrollbar-thumb {
     display: block !important;
 }
 
+.incorrect{
+    display: none;
+}
+
 #verif {
     color: #25f72e;
 }
