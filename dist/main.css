@@ -158,32 +158,33 @@ textarea::-webkit-scrollbar-thumb {
     display: block !important;
 }
 
-.unsecure {
-    color: #ff0000;
-    display: none;
-}
-
-.unsecure_on{
-    display: block !important;
-}
-
-.correct {
+#verif {
     color: #25f72e;
 }
-.form > form > p.unsecure, .form > form > p.correct {
+
+#unverif{
+    color: #ff0000;
+}
+
+.form > form > #unsecure, .form > form > #verif, .form > form > #unverif {
     text-transform: none;
     letter-spacing: normal;
     font-size: 14px;
     margin: -20px 0 40px;
+    display: none;
+}
+
+.info{
+    font-size: 14px;
+    margin-bottom: 40px;
 }
 
 .sucess{
     text-transform: none;
     letter-spacing: normal;
     font-size: 14px;
-    margin: -20px 0 40px;
     color: #25f72e;
-    display: none;
+    text-align: center;
 }
 
 .send{
@@ -201,4 +202,45 @@ textarea::-webkit-scrollbar-thumb {
 
 .logo a img {
     width: 100%;
+}
+
+.short{
+    color: #ff0000;
+    display: block !important;
+}
+
+.input_short{
+    border-color: #ff0000;
+}
+
+.weak{
+    color: #ffd000;
+    display: block !important;
+}
+
+.input_weak{
+    border-color: #ffd000;
+}
+
+.good{
+    color: #00d9ff;
+    display: block !important;
+}
+
+.input_good{
+    border-color: #00d9ff;
+}
+
+
+.strong{
+    color: #25f72e;
+    display: block !important;
+}
+
+.input_strong{
+    border-color: #25f72e;
+}
+
+.display{
+    display: block !important;
 }
