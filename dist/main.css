@@ -185,6 +185,7 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 14px;
     color: #25f72e;
     text-align: center;
+    display: none;
 }
 
 .send{
