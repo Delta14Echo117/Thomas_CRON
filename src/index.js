@@ -9,13 +9,12 @@ const images = importAll(require.context('./img', false, /.(png|jpe?g|svg)$/));
 
 $(document).ready(function() {
 
-    document.forms["connexion"].addEventListener("submit", function(e) {
-        const username = 'google@gmail.com';
-        const password = 'motdepasse';
+    $("#connexion").submit(function(e){
         e.preventDefault();
-    
-        if ($("input#email").val() != username || $("input#password").val() != password) {
-            console.log($("input#email").val());
+        const email = 'google@gmail.com';
+        const password = 'motdepasse';
+        
+       if ($("input#email").val() != email || $("input#password").val() != password) {
             $(".form > div:nth-child(1)").addClass("erreur");
         }
         else{
@@ -23,6 +22,15 @@ $(document).ready(function() {
         }
     });
 
-    
+    $("#forget").submit(function(e){
+        e.preventDefault();
+       const email_forget = 'google@gmail.com';
+        if ($("input#email").val() != email_forget) {
+            $(".form > div:nth-child(1)").addClass("erreur");
+        }
+        else{
+            $(".sucess").addClass("send");
+        }
+    });
 
 });

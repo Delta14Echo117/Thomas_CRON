@@ -118,6 +118,12 @@ input#email, input#password, input, textarea {
     margin: 10px 0 0 0;
 }
 
+.recup{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 10px 0 0 0;
+}
+
 textarea {
     scrollbar-width: thin;
   }
@@ -169,6 +175,19 @@ textarea::-webkit-scrollbar-thumb {
     letter-spacing: normal;
     font-size: 14px;
     margin: -20px 0 40px;
+}
+
+.sucess{
+    text-transform: none;
+    letter-spacing: normal;
+    font-size: 14px;
+    margin: -20px 0 40px;
+    color: #25f72e;
+    display: none;
+}
+
+.send{
+    display: block !important;
 }
 
 .logo {
